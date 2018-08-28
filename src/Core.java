@@ -17,7 +17,7 @@ public class Core {
 	    Graph<Object, RelationshipEdge> graphgml = new SimpleGraph<>(RelationshipEdge.class);
   	    try {
 	        gmlImporter.importGraph(graphgml, 
-	        		ImportGraph.readFile(System.getProperty("user.dir") + "\\src\\natural-cluster.gml"));
+	        		ImportGraph.readFile("./files/natural-cluster.gml"));
 	      } catch (ImportException e) {
 	        throw new RuntimeException(e);
 	      }	  

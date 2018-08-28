@@ -7,7 +7,7 @@ import org.jgrapht.io.*;
 import java.util.*;
 
 public class Connectivity {
-	// Conectividade para grafos não-direcionados
+	// Conectividade para grafos nï¿½o-direcionados
 	// Testar com connected e unconnected.gml
 
 	public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class Connectivity {
 		GmlImporter <DefaultVertex,RelationshipDirectedEdge> gmlImporter = new GmlImporter <> (vp1,ep1);
 	    SimpleGraph<DefaultVertex,RelationshipDirectedEdge> graphgml = new SimpleGraph<>(RelationshipDirectedEdge.class);
  	    try {
-	        gmlImporter.importGraph(graphgml, ImportGraph.readFile(System.getProperty("user.dir") + "\\src\\unconnected.gml"));
+	        gmlImporter.importGraph(graphgml, ImportGraph.readFile("./files/unconnected.gml"));
 	    } catch (ImportException e) {
 	        throw new RuntimeException(e);
 	    }	    		

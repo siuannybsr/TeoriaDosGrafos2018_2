@@ -12,38 +12,31 @@ import org.jgrapht.io.VertexProvider;
 
 public class VertexCover {
 	public static void main(String[] args) {
-	    //Gml
-	    VertexProvider <Object> vp1 = 
-	    		(label,attributes) -> new DefaultVertex (label,attributes);
-	    EdgeProvider <Object,RelationshipEdge> ep1 = 
-	    		(from,to,label,attributes) -> new RelationshipEdge(from,to,attributes);
-		GmlImporter <Object,RelationshipEdge> gmlImporter = new GmlImporter <> (vp1,ep1);
-	    Graph<Object, RelationshipEdge> graphgml = new SimpleGraph<>(RelationshipEdge.class);
-  	    try {
-	        gmlImporter.importGraph(graphgml, 
-	        		ImportGraph.readFile(System.getProperty("user.dir") + "\\src\\cordal.gml"));
-	      } catch (ImportException e) {
-	        throw new RuntimeException(e);
-	      }	    
-	       
-	    BarYehudaEvenTwoApproxVCImpl <Object,RelationshipEdge> vc1 = 
-	    		new BarYehudaEvenTwoApproxVCImpl <> (graphgml); 
-        System.out.println("BarYehudaEvenTwoApproxVCImpl (cobertura): \n" + vc1.getVertexCover() );
+		// Gml
+		VertexProvider<Object> vp1 = (label, attributes) -> new DefaultVertex(label, attributes);
+		EdgeProvider<Object, RelationshipEdge> ep1 = (from, to, label, attributes) -> new RelationshipEdge(from, to,
+				attributes);
+		GmlImporter<Object, RelationshipEdge> gmlImporter = new GmlImporter<>(vp1, ep1);
+		Graph<Object, RelationshipEdge> graphgml = new SimpleGraph<>(RelationshipEdge.class);
+		try {
+			gmlImporter.importGraph(graphgml, ImportGraph.readFile("./files/cordal.gml"));
+		} catch (ImportException e) {
+			throw new RuntimeException(e);
+		}
 
-        ClarksonTwoApproxVCImpl <Object,RelationshipEdge> vc2 = 
-	    		new ClarksonTwoApproxVCImpl <> (graphgml); 
-        System.out.println("ClarksonTwoApproxVCImpl (cobertura): \n" + vc2.getVertexCover() );
-        
-        EdgeBasedTwoApproxVCImpl <Object,RelationshipEdge> vc3 = 
-	    		new EdgeBasedTwoApproxVCImpl <> (graphgml); 
-        System.out.println("EdgeBasedTwoApproxVCImpl (cobertura): \n" + vc3.getVertexCover() );
-        
-        GreedyVCImpl <Object,RelationshipEdge> vc4 = 
-	    		new GreedyVCImpl <> (graphgml); 
-        System.out.println("GreedyVCImpl (cobertura): \n" + vc4.getVertexCover() );
-        
-        RecursiveExactVCImpl <Object,RelationshipEdge> vc5 = 
-	    		new RecursiveExactVCImpl <> (graphgml); 
-        System.out.println("RecursiveExactVCImpl (cobertura): \n" + vc5.getVertexCover() );
-	}	    
+		BarYehudaEvenTwoApproxVCImpl<Object, RelationshipEdge> vc1 = new BarYehudaEvenTwoApproxVCImpl<>(graphgml);
+		System.out.println("BarYehudaEvenTwoApproxVCImpl (cobertura): \n" + vc1.getVertexCover());
+
+		ClarksonTwoApproxVCImpl<Object, RelationshipEdge> vc2 = new ClarksonTwoApproxVCImpl<>(graphgml);
+		System.out.println("ClarksonTwoApproxVCImpl (cobertura): \n" + vc2.getVertexCover());
+
+		EdgeBasedTwoApproxVCImpl<Object, RelationshipEdge> vc3 = new EdgeBasedTwoApproxVCImpl<>(graphgml);
+		System.out.println("EdgeBasedTwoApproxVCImpl (cobertura): \n" + vc3.getVertexCover());
+
+		GreedyVCImpl<Object, RelationshipEdge> vc4 = new GreedyVCImpl<>(graphgml);
+		System.out.println("GreedyVCImpl (cobertura): \n" + vc4.getVertexCover());
+
+		RecursiveExactVCImpl<Object, RelationshipEdge> vc5 = new RecursiveExactVCImpl<>(graphgml);
+		System.out.println("RecursiveExactVCImpl (cobertura): \n" + vc5.getVertexCover());
+	}
 }

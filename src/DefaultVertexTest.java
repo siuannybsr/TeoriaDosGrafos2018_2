@@ -15,7 +15,7 @@ import org.junit.Test;
  *
  */
 public class DefaultVertexTest {
-	
+
 	static DefaultVertex d1;
 	static DefaultVertex d2;
 
@@ -24,8 +24,8 @@ public class DefaultVertexTest {
 	 */
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
-		d1 = new DefaultVertex("oi",null);
-	    d2 = new DefaultVertex("oi",null);
+		d1 = new DefaultVertex("oi", null);
+		d2 = new DefaultVertex("oi", null);
 		System.out.println("Starting Class Test");
 
 	}
@@ -55,11 +55,12 @@ public class DefaultVertexTest {
 	}
 
 	/**
-	 * Test method for {@link DefaultVertex#DefaultVertex(java.lang.Object, java.util.Map)}.
+	 * Test method for
+	 * {@link DefaultVertex#DefaultVertex(java.lang.Object, java.util.Map)}.
 	 */
 	@Test
 	public void testDefaultVertex() {
-		assertEquals(d1.getId(),"oi");
+		assertEquals(d1.getId(), "oi");
 	}
 
 	/**
@@ -67,7 +68,7 @@ public class DefaultVertexTest {
 	 */
 	@Test
 	public void testGetId() {
-		assertEquals(d2.getId(),"oi");
+		assertEquals(d2.getId(), "oi");
 	}
 
 	/**
@@ -77,11 +78,11 @@ public class DefaultVertexTest {
 	public void testGetLabel() {
 		try {
 			d1.getLabel();
-		    fail();
+			fail();
 		} catch (Exception e) {
 			assertTrue(true);
 		}
- 
+
 	}
 
 	/**

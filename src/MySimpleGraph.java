@@ -26,8 +26,7 @@ public class MySimpleGraph {
 	 * tambem utiliza-se de outros metodos para que se consiga obter informacoes
 	 * relacionadas a este grafo.
 	 * 
-	 * @param args
-	 *            parametro padrao do metodo main
+	 * @param args parametro padrao do metodo main
 	 */
 	public static void main(String[] args) {
 		// Inicializa a variavel que ira receber o grafo o qual sera criar.

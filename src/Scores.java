@@ -32,7 +32,7 @@ public class Scores {
 		GmlImporter <DefaultVertex,RelationshipEdge> gmlImporter = new GmlImporter <> (vp1,ep1);
   	    try {
 	        gmlImporter.importGraph(graphgml, 
-	        		ImportGraph.readFile(System.getProperty("user.dir")+"\\src\\teiaG.gml"));
+	        		ImportGraph.readFile("./files/teiaG.gml"));
 	      } catch (ImportException e) {
 	        throw new RuntimeException(e);
 	    }	    
@@ -90,7 +90,7 @@ public class Scores {
 	   System.out.println(c.getScores());
 	}	  
 
-	// Métodos Auxiliares
+	// Mï¿½todos Auxiliares
     static int fact (int n) {
     	if (n == 1 || n == 0) {
     		return 1;

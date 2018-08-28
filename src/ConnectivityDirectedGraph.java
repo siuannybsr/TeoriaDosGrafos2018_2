@@ -18,7 +18,7 @@ public class ConnectivityDirectedGraph {
 	    DefaultDirectedGraph<DefaultVertex,RelationshipDirectedEdge> graphgml = new DefaultDirectedGraph<>(RelationshipDirectedEdge.class);
    	    try {
    	    	// Testar com arquivos strongly1.gml ... strongly4.gml
-	        gmlImporter.importGraph(graphgml, ImportGraph.readFile(System.getProperty("user.dir") + "\\src\\strongly4.gml"));
+	        gmlImporter.importGraph(graphgml, ImportGraph.readFile("./files/strongly4.gml"));
 	      } catch (ImportException e) {
 	        throw new RuntimeException(e);
 	      }	    		

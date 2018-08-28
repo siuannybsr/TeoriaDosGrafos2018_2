@@ -3,12 +3,12 @@ import java.util.Iterator;
 import java.util.Set;
 import java.lang.Comparable;
 
-public class DefaultVertexSet <V> extends HashSet <V> implements Comparable <V> {
-	// Para um conjunto de Vértices retorna o objeto vértice identificado pelo label
+public class DefaultVertexSet<V> extends HashSet<V> implements Comparable<V> {
+	// Para um conjunto de Vertices retorna o objeto vertice identificado pelo label
 
 	static final long serialVersionUID = 1;
-	
-	static public DefaultVertex getVertexfromLabel (Set <DefaultVertex> V, String label) {
+
+	static public DefaultVertex getVertexfromLabel(Set<DefaultVertex> V, String label) {
 		Iterator<DefaultVertex> it = V.iterator();
 		while (it.hasNext()) {
 			DefaultVertex v = it.next();
@@ -19,13 +19,14 @@ public class DefaultVertexSet <V> extends HashSet <V> implements Comparable <V> 
 		}
 		return null;
 	}
-	
-	public int compareTo (DefaultVertexSet <V> s) {
-		if ((this.size()) < s.size() ) {
+
+	public int compareTo(DefaultVertexSet<V> s) {
+		if ((this.size()) < s.size()) {
 			return -1;
-		} else if ((this.size()) < s.size() ) {
+		} else if ((this.size()) < s.size()) {
 			return 0;
-		} else return 1;
+		} else
+			return 1;
 	}
 
 	@Override
@@ -33,5 +34,5 @@ public class DefaultVertexSet <V> extends HashSet <V> implements Comparable <V> 
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	
+
 }

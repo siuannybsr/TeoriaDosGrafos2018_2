@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class ImportGraph <V,E,VP,EP> {
-	// Leitura de Arquivo Texto retornando um StringReader que é entrada para a importação de grafos
+	// Leitura de Arquivo Texto retornando um StringReader que eh entrada para a importaï¿½ï¿½o de grafos
 	
 	static StringReader readFile (String filename) {
         StringBuilder contentBuilder = new StringBuilder();

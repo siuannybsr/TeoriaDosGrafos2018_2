@@ -3,10 +3,7 @@ Repositório contendo códigos exemplos para a turma de Teoria dos Grafos (UFCG 
 
 ## 1° atualização
 
-* Comentários para auxiliar aprendizagem na classe MySimpleGraph.java
-* Documentação na classe MySimpleGraph.java
-* Melhorias no código da classe MySimpleGraph.java
-
+* Adicionado comentários para auxiliar aprendizagem, documentacao e melhorias de código na classe MySimpleGraph.java
 
 ## 2° atualização
 
@@ -15,6 +12,13 @@ Repositório contendo códigos exemplos para a turma de Teoria dos Grafos (UFCG 
 
 ## 3° atualização
 
-* Comentários na classe ShortestPath.java
-* Documentação na classe ShortestPath.java
-* Pequenas melhorias de código na classe ShortestPath.java
+* Adicionado comentários, documentação e realizadas pequenas melhorias de código na classe ShortestPath.java
+
+## 4° atualização
+
+* Criado o package example
+* Adicionado comentários, documentacoes e realizadas algumas alterações nas classes:
+  * DefaultVertex.java
+  * DefaultVertexSet.java
+  * RelationshipDirectedEdge.java
+  * RelationshipEdge.java

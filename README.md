@@ -13,7 +13,7 @@ Repositório contendo códigos exemplos para a turma de Teoria dos Grafos (UFCG 
 * Mudanças nas pastas dos arquivos (Separar arquivos de código java) com intuito de auxiliar a melhor visualização do projeto.
 
 
-## 2° atualização
+## 3° atualização
 
 * Comentários na classe ShortestPath.java
 * Documentação na classe ShortestPath.java

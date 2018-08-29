@@ -36,6 +36,8 @@ Repositório contendo códigos exemplos para a turma de Teoria dos Grafos (UFCG 
 - [ ] TSP
 - [ ] VertexCover
 
+## Histórico de Atualizações
+
 ### 1° atualização
 
 * Adicionado comentários para auxiliar aprendizagem, documentacao e melhorias de código na classe MySimpleGraph.java

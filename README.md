@@ -52,6 +52,7 @@ Repositório contendo códigos exemplos para a turma de Teoria dos Grafos (UFCG 
 ### 4° atualização
 
 * Criado o package example
+* Alterações nos caminhos dos arquivos para que fiquem compatíveis com qualquer SO.
 * Adicionado comentários, documentacoes e realizadas algumas alterações nas classes:
   * DefaultVertex.java
   * DefaultVertexSet.java

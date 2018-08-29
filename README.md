@@ -10,8 +10,8 @@ Repositório contendo códigos exemplos para a turma de Teoria dos Grafos (UFCG 
 - [ ] Connectivity
 - [ ] ConnectivityDirectedGraph
 - [ ] Core
-- [x] **DefaultVertex
-- [x] **DefaultVertexSet
+- [x] **DefaultVertex**
+- [x] **DefaultVertexSet**
 - [ ] FixedPoints
 - [ ] HelloJGraphT
 - [ ] HelloWorldX
@@ -24,12 +24,12 @@ Repositório contendo códigos exemplos para a turma de Teoria dos Grafos (UFCG 
 - [ ] JgraphXAdaoterDemo
 - [ ] MaximumFlow
 - [ ] MyJGraphXAdapter
-- [x] **MyPseudoGraph
-- [x] **MySimpleGraph
-- [x] **RelationshipDirectedEdge
-- [x] **RelationshipEdge
+- [x] **MyPseudoGraph**
+- [x] **MySimpleGraph**
+- [x] **RelationshipDirectedEdge**
+- [x] **RelationshipEdge**
 - [ ] Scores
-- [x] **ShortestPath
+- [x] **ShortestPath**
 - [ ] SpanningTree
 - [ ] StringlyConnected
 - [ ] TourSearch
